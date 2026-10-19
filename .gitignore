@@ -1,0 +1,28 @@
+# ========================
+# 1. BỎ QUA THƯ MỤC THƯ VIỆN (Ở BẤT KỲ ĐÂU)
+# ========================
+node_modules/
+*/node_modules/
+
+# ========================
+# 2. BỎ QUA FILE BẢO MẬT (Ở BẤT KỲ ĐÂU)
+# ========================
+.env
+*/.env
+.env.*
+*/.env.*
+
+# ========================
+# 3. BỎ QUA THƯ MỤC BUILD CỦA FRONTEND
+# ========================
+dist/
+*/dist/
+build/
+*/build/
+
+# ========================
+# 4. BỎ QUA CÁC FILE RÁC HỆ THỐNG & LOG
+# ========================
+*.log
+.DS_Store
+Thumbs.db

@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* ========================================== */
+  /* GIAO DIỆN SÁNG (MẶC ĐỊNH)                  */
+  /* ========================================== */
+  :root {
+    /* 1. Nền (Background) */
+    --bg-background: #f3f4f6; /* Nền xám rất nhạt cho toàn web */
+    --bg-surface: #ffffff; /* Nền trắng tinh cho Card, Navbar */
+    --bg-hover: #f9fafb; /* Nền xám nhạt khi hover các nút phụ */
+
+    /* 2. Chữ (Text) */
+    --text-foreground: #111827; /* Đen/Xám đậm cho chữ chính */
+    --text-muted: #6b7280; /* Xám cho chữ phụ, mô tả */
+    --text-on-primary: #ffffff; /* Chữ trắng khi nằm trên nền Xanh */
+
+    /* 3. Viền (Border) */
+    --border-main: #e5e7eb; /* Viền xám nhạt */
+
+    /* 4. Màu Xanh Chủ Đạo (Primary) */
+    --primary-50: #eff6ff; /* Xanh cực nhạt (Dùng khi hover Navbar) */
+    --primary-100: #dbeafe;
+    --primary-500: #3b82f6;
+    --primary-600: #2563eb; /* Xanh dương chuẩn cho Logo, Nút chính */
+    --primary-700: #1d4ed8; /* Xanh đậm khi ấn vào nút */
+  }
+
+  /* ========================================== */
+  /* GIAO DIỆN TỐI (DARK MODE)                  */
+  /* ========================================== */
+  [data-theme="dark"] {
+    /* 1. Nền (Background) */
+    --bg-background: #121212; /* Nền đen sâu */
+    --bg-surface: #1e1e1e; /* Nền đen nhạt hơn cho Card, Navbar */
+    --bg-hover: #2d2d2d; /* Nền xám tối khi hover các nút phụ */
+
+    /* 2. Chữ (Text) */
+    --text-foreground: #e5e7eb; /* Chữ xám sáng/trắng (Đúng ý bạn) */
+    --text-muted: #9ca3af; /* Chữ xám tối hơn cho mô tả */
+    --text-on-primary: #ffffff; /* Chữ vẫn trắng trên nền Xanh */
+
+    /* 3. Viền (Border) */
+    --border-main: #374151; /* Viền xám tối */
+
+    /* 4. Màu Xanh Chủ Đạo (Giữ nguyên sắc xanh nhưng làm dịu mắt hơn) */
+    --primary-50: #1e3a8a; /* Hover Navbar sẽ có nền xanh thẫm cực sang */
+    --primary-100: #1e40af;
+    --primary-500: #3b82f6;
+    --primary-600: #3b82f6; /* Giữ xanh dương sáng cho Logo nổi bật */
+    --primary-700: #2563eb;
+  }
+}
+
+/* Ép màu nền và chữ mặc định cho toàn bộ body */
+body {
+  background-color: var(--bg-background);
+  color: var(--text-foreground);
+}
